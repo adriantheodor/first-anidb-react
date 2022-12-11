@@ -1,8 +1,8 @@
 import axios from "axios";
-
-const FAVS_API = 'https://anidb-1.herokuapp.com/api/favorites'
-const USER_FAVS_API = 'https://anidb-1.herokuapp.com/api/users'
-const IS_FAV_API = 'https://anidb-1.herokuapp.com/api/anime'
+const API_BASE = process.env.REACT_APP_API_BASE
+const FAVS_API = `${API_BASE}/favorites`
+const USER_FAVS_API = `${API_BASE}/users`
+const IS_FAV_API = `${API_BASE}/anime`
 
 const api = axios.create(
     {

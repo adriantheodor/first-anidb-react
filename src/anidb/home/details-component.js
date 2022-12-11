@@ -42,7 +42,7 @@ const DetailsComponent = () => {
             //dispatch(deleteReviewThunk(reviewId))
             setRating(animeRating.length === 1 ? animeRating[0].rating : 50)
         }
-    }, [animeId, isFav, JSON.stringify(reviews), JSON.stringify(animeRating)])
+    }, [animeId, isFav, JSON.stringify(reviews), JSON.stringify(animeRating), dispatch, animeRating, currentUser])
     const handleReview = () => {
         dispatch(createReviewThunk(
             {
