@@ -11,7 +11,7 @@ const People = () => {
     useEffect(() => {
         dispatch(findFollowersThunk(currentUser._id))
         dispatch(findFollowingThunk(currentUser._id))
-    }, [currentUser._id])
+    }, [currentUser._id, dispatch])
     return (
         <Accordion>
             <Accordion.Item eventKey="0">

@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const REVIEWS_API = 'http://localhost:4000/api/reviews'
-const ANIME_REVIEWS_API = 'http://localhost:4000/api/anime'
-const USER_REVIEWS_API = 'http://localhost:4000/api/users'
+const REVIEWS_API = 'https://anidb-1.herokuapp.com/api/reviews'
+const ANIME_REVIEWS_API = 'https://anidb-1.herokuapp.com/api/anime'
+const USER_REVIEWS_API = 'https://anidb-1.herokuapp.com/api/users'
 
 const api = axios.create(
     {

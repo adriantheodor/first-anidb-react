@@ -14,7 +14,7 @@ const MyActivity =() => {
     useEffect(() => {
         dispatch(findReviewsByAuthorThunk(currentUser._id))
         dispatch(findRatingsByUserThunk(currentUser._id))
-    }, [])
+    }, [dispatch])
     return(
         <>
             <Accordion>

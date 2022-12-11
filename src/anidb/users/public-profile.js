@@ -37,7 +37,7 @@ const PublicProfile = () => {
         dispatch(findFollowersThunk(uid))
         dispatch(findFollowingThunk(uid))
         dispatch(findIfFollowingThunk(uid))
-    }, [uid, ifFollowing])
+    }, [uid, ifFollowing, dispatch])
     return(
         <>
             <h3 className="text-center">Public Profile</h3>
