@@ -2,11 +2,11 @@ import axios from "axios";
 
 const API_BASE = process.env.REACT_APP_API_BASE
 
-const REVIEWS_API = `${API_BASE}/reviews`
+const REVIEWS_API = `${API_BASE}reviews`
 
-const ANIME_REVIEWS_API = `${API_BASE}/anime`
+const ANIME_REVIEWS_API = `${API_BASE}anime`
 
-const USER_REVIEWS_API = `${API_BASE}/users`
+const USER_REVIEWS_API = `${API_BASE}users`
 
 const api = axios.create(
     {

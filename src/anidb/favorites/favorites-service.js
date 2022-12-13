@@ -1,8 +1,8 @@
 import axios from "axios";
 const API_BASE = process.env.REACT_APP_API_BASE
-const FAVS_API = `${API_BASE}/favorites`
-const USER_FAVS_API = `${API_BASE}/users`
-const IS_FAV_API = `${API_BASE}/anime`
+const FAVS_API = `${API_BASE}favorites`
+const USER_FAVS_API = `${API_BASE}users`
+const IS_FAV_API = `${API_BASE}anime`
 
 const api = axios.create(
     {
